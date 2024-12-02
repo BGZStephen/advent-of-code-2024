@@ -1032,7 +1032,6 @@ function isLineValid(numbers, attempts = 0) {
 
     if (direction === 'increment' && (left + 3 < right || left >= right)) {
       if (attempts === 1) {
-        console.log("Errored on new lines")
         return false;
       }
 
