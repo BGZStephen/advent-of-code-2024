@@ -2005,8 +2005,8 @@ const listTwo = [
 ]
 
 function main() {
-  const listOneUniqueValues = new Set(listOne);
-  const listTwoOccurrenceHashMap = [];
+  const listOneUniqueValues = listOne;
+  const listTwoOccurrenceHashMap = {};
   let res = 0;
 
   for (const listTwoItem of listTwo) {
