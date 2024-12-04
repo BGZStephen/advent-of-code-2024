@@ -162,16 +162,7 @@ function main() {
       const toBottomLeft = [input[i][j], input[i + 1]?.[j - 1], input[i + 2]?.[j - 2], input[i + 3]?.[j - 3]].join("") === targetWord ? 1 : 0
       const toTopLeft = [input[i][j], input[i - 1]?.[j - 1], input[i - 2]?.[j - 2], input[i - 3]?.[j - 3]].join("") === targetWord ? 1 : 0
 
-      total += (
-        leftToRight + 
-        rightToLeft + 
-        topToBottom + 
-        bottomToTop + 
-        toTopRight + 
-        toBottomRight + 
-        toBottomLeft + 
-        toTopLeft
-      )
+      total += (leftToRight + rightToLeft + topToBottom + bottomToTop + toTopRight + toBottomRight + toBottomLeft + toTopLeft)
     }
   }
 
